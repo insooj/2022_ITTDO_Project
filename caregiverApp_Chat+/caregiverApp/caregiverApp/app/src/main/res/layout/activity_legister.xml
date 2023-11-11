@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/yellow"
+    tools:context=".legister_activity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="171dp"
+        android:layout_height="117dp"
+        android:layout_gravity="center"
+        android:background="@null"
+        android:src="@drawable/ittdo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.133">
+
+    </ImageView>
+
+    <EditText
+        android:id="@+id/newid"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:background="#FFFFFF"
+        android:drawableStart="@drawable/ic_baseline_person_24"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:hint="ID(Email 형식으로 작성바랍니다)"
+        android:inputType="text"
+
+        android:padding="10dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.439"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.345"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:background="#FFFFFF"
+        android:drawableStart="@drawable/ic_baseline_person_24"
+        android:drawableLeft="@drawable/ic_baseline_lock_24"
+        android:hint="Name"
+        android:inputType="text"
+
+        android:padding="10dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.439"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.433"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/newPwd"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:background="#FFFFFF"
+        android:drawableStart="@drawable/ic_baseline_lock_24"
+        android:drawableLeft="@drawable/ic_baseline_lock_24"
+        android:hint="Password 최소 6 글자 이상 "
+        android:inputType="textPassword"
+
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.439"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.522"
+        tools:ignore="MissingConstraints" />
+
+
+
+    <EditText
+        android:id="@+id/userPhone"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="#FFFFFF"
+        android:drawableStart="@drawable/ic_baseline_local_phone_24"
+        android:drawableLeft="@drawable/ic_baseline_local_phone_24"
+        android:hint="Phone"
+        android:inputType="text"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.439"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newPwd">
+
+    </EditText>
+
+    <Button
+        android:id="@+id/btn_legister"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:text="legister"
+        android:textColor="#000000"
+        android:backgroundTint="#F9FBA7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.439"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userPhone"/>
+
+    <Button
+        android:id="@+id/btn_legisterback"
+        android:layout_width="133dp"
+        android:layout_height="54dp"
+        android:text="뒤로가기"
+        android:textColor="#000000"
+        android:backgroundTint="#F9FBA7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.143"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.954"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
